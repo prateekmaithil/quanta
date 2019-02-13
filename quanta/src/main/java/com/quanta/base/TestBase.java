@@ -41,11 +41,9 @@ public class TestBase {
 	
 	public static void initialization(){
 		String browserName = prop.getProperty("browser");
-		
-						
-			System.setProperty(prop.getProperty("drivername"),prop.getProperty("driverpath"));
+		System.setProperty(prop.getProperty("drivername"),prop.getProperty("driverpath"));
 			
-			driver = new ChromeDriver(); 
+		driver = new ChromeDriver(); 
 			
 		e_driver = new EventFiringWebDriver(driver);
 		// Now create object of EventListerHandler to register it with EventFiringWebDriver
