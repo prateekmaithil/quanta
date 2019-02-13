@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.testcases.ServicePageTest">
+      <class name="com.qa.testcases.HomePageTest">
         <methods>
-          <include name="EpatButtonClick"/>
+          <include name="homePageTest"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.qa.testcases.ServicePageTest -->
+      </class> <!-- com.qa.testcases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -17,7 +17,7 @@ public class Homepage extends TestBase {
 	}
 	
 	public Loginpage clickOnlogin(){
-		WaitUntilElementVisible(loginb);
+		WaitForElementToBeVisible(loginb);
 		loginb.click();
 		return new Loginpage();
 	}

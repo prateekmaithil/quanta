@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.testcases.ProfilePageTest">
+      <class name="com.qa.testcases.HomePageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="getEmailAddress"/>
-        </methods>
-      </class> <!-- com.qa.testcases.ProfilePageTest -->
-      <class name="com.qa.testcases.ServicePageTest">
-        <methods>
-          <include name="EpatButtonClick"/>
+          <include name="homePageTest"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.qa.testcases.ServicePageTest -->
+      </class> <!-- com.qa.testcases.HomePageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

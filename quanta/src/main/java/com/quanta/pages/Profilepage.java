@@ -2,6 +2,7 @@ package com.quanta.pages;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -12,6 +13,8 @@ import com.quanta.utility.Util;
 public class Profilepage extends TestBase {
 	
 	//Page Factory - OR:
+	
+	
 	@FindBy(xpath="//*[contains(@class,'headerPic') and contains(@class,'learner-profile-alt')]")
 	WebElement userloginsymbol;
 		
@@ -36,11 +39,10 @@ public class Profilepage extends TestBase {
 	}
 		
 	//Actions:
-	
-		
 	public Myservicepage profilepage(){
-		waitForPageLoaded();		
-	//	WaitUntilElementVisible(By.xpath(".//*[contains(@class,'headerPic') and contains(@class,'learner-profile-alt')]"));
+		waitForPageLoaded();	
+		WaitForElementToBeVisible(userloginsymbol);
+		// WaitUntilElementVisible((By.xpath("//*[contains(@class,'headerPic') and contains(@class,'learner-profile-alt')]"));
 		userloginsymbol.click();
 		profilepagelink.click();			
 		Util.switchToNewTab(1);

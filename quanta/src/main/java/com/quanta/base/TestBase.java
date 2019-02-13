@@ -61,12 +61,12 @@ public class TestBase {
 		driver.get(prop.getProperty("url"));
 	}
 	
-	public static void WaitUntilElementVisible(WebElement elementLocator)
+	public static void WaitUntilElementVisible(By webElement)
     {
         try
         {
             WebDriverWait wait = new WebDriverWait(driver, 5000);
-            wait.until(ExpectedConditions.elementToBeClickable(elementLocator));
+            wait.until(ExpectedConditions.elementToBeClickable(webElement));
         }
         catch (NoSuchElementException e)
         { 
