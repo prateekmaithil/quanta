@@ -17,7 +17,7 @@ public class Homepage extends TestBase {
 	}
 	
 	public Loginpage clickOnlogin(){
-		WaitUntilElementVisible(By.xpath("//a[contains(@class,'openLogin')]"));
+		WaitUntilElementVisible(loginb);
 		loginb.click();
 		return new Loginpage();
 	}
